@@ -1,43 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/CSS" href="style.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Daniel Ayers - Responsive Portfolio</title>
+  </head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Dan Ayers</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" a href="index.html">Home/About <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" a href="contact.html">Contact</a>
-            <a class="nav-item nav-link" a href="portfolio.html">Portfolio</a>
-          </div>
-        </div>
-      </nav>
-      <h1>Home</h1>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="assets/IMG_20200122_203154_145.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">About Me</h5>
-          <p class="aboutParagraph">Previously a touring drummer, server, and welder, I am now honing my skills as a 
-            web developer as my next major step in life. 
-          <p class="aboutParagraph">I currently live in downtown Raleigh with three cats as I finish my full-stack web development course.
-            I've worked in the service industry for 8 years and I'm very excited to transition into web-development full time.   
-        </div>
+  <body class="container-fluid" style="background-color: lightgray;">
+    <nav class="row navbar navbar-expand bg-dark navbar-dark">
+      <header
+        class="col-xs-12 col-lg-9 navbar-text"
+        style="font-family: 'Alegreya Sans SC', sans-serif; font-size: larger;"
+      >
+        Daniel Ayers
+      </header>
+      <ul
+        class="col-xs-12 col-lg-3 navbar-nav nav-tabs text-sm-center d-flex flex-row-reverse"
+        style="font-family: 'Alegreya Sans SC', sans-serif;"
+      >
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header
+      class="row shadow-sm p-4 mb-4 bg-secondary text-white"
+      style="font-family: 'Alegreya Sans SC', sans-serif;"
+    >
+      <h1>About me</h1>
+    </header>
+
+    <main class="row">
+      <figure class="col-xs-12 col-lg-2">
+        <img
+          src="assets/me.jpg"
+          alt="head shot"
+          class="img-thumbnail fluid"
+        />
+      </figure>
+      <div
+        class="col-xs-12 col-lg-10"
+        style="font-family: 'Roboto', sans-serif;"
+      >
+        <p class="mb-2.5">
+          I'm a server turned web-developer. In the past four months, I've built a portfolio of various applications using HTML, Javascript, CSS, Bootstrap, Heroku and various others. 
+        </p>
+        <p class="mb-2.5">
+          I've always been a big fan of puzzles and challenges, so the transition into coding and web-development hasn't been too big of a leap for me - I've always felt encouraged by a challenge rather than discouraged. 
+        </p>
+        <p class="mb-2.5">
+          I'm a drummer, writer, and part-time welder. I've toured the country three times with various bands of various genres of music, and in my free time I can frequently be found playing music. 
+          
+        </p>
+        <p class="mb-2.5">
+          It's my goal to be able to consistently better myself with my programming and development. In a short time, I've developed a passion for creating intuitive, sleek applications that make a user's life easier. 
+        </p>
+        <p class="mb=2.5">
+          Here's my linkedin profile:
+          <a
+            class="textLink"
+            href="https://www.linkedin.com/in/dan-ayers-06a6481aa/"
+            target="_blank"
+            >https://www.linkedin.com/in/dan-ayers-06a6481aa/</a
+          >
+          <br>
+          and my Github profile:
+          <a
+            class="textLink"
+            href="https://github.com/danglayers"
+            target="_blank"
+            >github.com/danglayers</a
+          >
+        </p>
       </div>
-      <footer class="footer">
-        Daniel Ayers 
-        danglayers@gmail.com 
-        919-896-4409
+    </main>
+
+    <footer id="sticky-footer" class="py-1 bg-secondary text-white-50">
+      <div
+        class="container text-center"
+        style="font-family: 'Alegreya Sans SC', sans-serif;"
+      >
+        <small>&copy; Daniel Ayers - 919 896 4409 - 2020</small>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
