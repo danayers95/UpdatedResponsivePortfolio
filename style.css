@@ -1,4 +1,4 @@
-.navbar {
+#navbar {
     background-color: silver;
     border-style: ridge;
     border-radius: 15px;
@@ -12,6 +12,7 @@
 }
 body {
     background-color: rgb(226, 229, 229);
+    text-align: center;
 }
 h1 {
     font-weight: bold;
@@ -27,7 +28,7 @@ h1 {
     background-color: rgb(212, 154, 144);
 }
 .form-group {
-    width: 350px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -52,4 +53,25 @@ h1 {
 .bg-secondary {
     width: 100%;
     text-align: center;
+}
+
+#contactLink {
+    color: rgba(0, 31, 131, 0.856);
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #a8a8a888;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1600px !important;
+    }
 }
